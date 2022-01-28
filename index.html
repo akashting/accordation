@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="accordation">
+			<div id="header">
+				<p class="title">Header</p>
+				<p class="desc">
+					Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
+					Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+					condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi.
+					Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu
+					ante scelerisque vulputate. <br />
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+					nesciunt deleniti quaerat velit ratione deserunt quia voluptatem
+					dolore expedita eum accusamus at consectetur voluptatibus cupiditate
+					itaque laborum, fugit consequuntur molestiae.
+				</p>
+			</div>
+			<div id="header">
+				<p class="title">Header</p>
+				<p class="desc">
+					Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
+					Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+					condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi.
+					Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu
+					ante scelerisque vulputate. <br />
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+					nesciunt deleniti quaerat velit ratione deserunt quia voluptatem
+					dolore expedita eum accusamus at consectetur voluptatibus cupiditate
+					itaque laborum, fugit consequuntur molestiae.
+				</p>
+			</div>
+			<div id="header">
+				<p class="title">Header</p>
+				<p class="desc">
+					Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
+					Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+					condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi.
+					Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu
+					ante scelerisque vulputate. <br />
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+					nesciunt deleniti quaerat velit ratione deserunt quia voluptatem
+					dolore expedita eum accusamus at consectetur voluptatibus cupiditate
+					itaque laborum, fugit consequuntur molestiae.
+				</p>
+			</div>
+			<div id="header">
+				<p class="title">Header</p>
+				<p class="desc">
+					Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
+					Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+					condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi.
+					Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu
+					ante scelerisque vulputate. <br />
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+					nesciunt deleniti quaerat velit ratione deserunt quia voluptatem
+					dolore expedita eum accusamus at consectetur voluptatibus cupiditate
+					itaque laborum, fugit consequuntur molestiae.
+				</p>
+			</div>
+		</div>
+		<script>
+			var desc = $(".desc").hide();
+			$(".title").click(function () {
+				$this = $(this);
+				$target = $this.next();
+
+				if (!$this.hasClass("close")) {
+					$(".title").removeClass("close");
+					desc.slideUp();
+					$this.addClass("close");
+					$target.slideDown();
+				} else {
+					$target.slideUp();
+					$this.removeClass("close");
+				}
+			});
+		</script>
+	</body>
+</html>
