@@ -26,5 +26,6 @@
 }
 
 .accordation #header .title:hover{
+    color: #fff;
     background: #0245a3;
 }
